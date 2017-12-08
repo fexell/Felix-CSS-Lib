@@ -1,0 +1,533 @@
+
+/*
+FLEXBOX
+------- */
+
+
+.flexbox,
+.fbox {
+    display: -webkit-box; /* 2009 Fallback */
+    display: -moz-box; /* 2009 Fallback */
+    display: -ms-Flexbox;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    /* GIVE THE FLEXBOXES A box-sizing: border-box; SO PADDING, BORDER, ETC. CAN BE ADDED */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box
+    box-sizing: border-box;
+}
+
+.flex-row-auto {
+    
+}
+
+/* FLEX ORDER
+///////////// */
+
+.flex-order-1,
+.fo1,
+.f-o-1,
+.flor1,
+.fl-or-1 {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+}
+
+.flex-order-2,
+.fo2,
+.f-o-2,
+.flor2,
+.fl-or-2 {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+}
+
+.flex-order-3,
+.fo3,
+.f-o-3,
+.flor3,
+.fl-or-3 {
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3;
+}
+
+.flex-order-4,
+.fo4,
+.f-o-4,
+.flor4,
+.fl-or-4 {
+    -webkit-box-ordinal-group: 4;
+    -moz-box-ordinal-group: 4;
+    -ms-flex-order: 4;
+    -webkit-order: 4;
+    order: 4;
+}
+
+.flex-order-5,
+.fo5,
+.f-o-5,
+.flor5,
+.fl-or-5 {
+    -webkit-box-ordinal-group: 5;
+    -moz-box-ordinal-group: 5;
+    -ms-flex-order: 5;
+    -webkit-order: 5;
+    order: 5;
+}
+
+.flex-order-6,
+.fo6,
+.f-o-6,
+.flor6,
+.fl-or-6 {
+    -webkit-box-ordinal-group: 6;
+    -moz-box-ordinal-group: 6;
+    -ms-flex-order: 6;
+    -webkit-order: 6;
+    order: 6;
+}
+
+/* FLEX SIZE 
+//////////// */
+
+.flexbox-row {
+    -webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.flexbox-column {
+    -webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -ms-flex-direction: column;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-flow: column wrap;
+    -moz-flex-flow: column wrap;
+    flex-flow: column wrap;
+}
+
+.auto-flex, /* For Auto-Flex, give the container of the flexboxes the .flexbox class. Otherwise it won't auto-grow. */
+.a-f,
+.aufl,
+.au-fl,
+.aflex,
+.one-flex,
+.ofl,
+.o-fl,
+.oflex,
+.two-flex,
+.twfl,
+.tw-fl,
+.twflex,
+.three-flex,
+.thfl,
+.th-fl,
+.thflex,
+.four-flex,
+.ff,
+.fofl,
+.fo-fl,
+.fflex {
+    -webkit-flex-basis: auto;
+    -moz-flex-basis: auto;
+    flex-basis: auto;
+}
+
+.auto-flex, /* For Auto-Flex, give the container of the flexboxes the .flexbox class. Otherwise it won't auto-grow. */
+.a-f,
+.aufl,
+.au-fl,
+.aflex {
+    -webkit-box-flex: auto;
+    -moz-box-flex: auto;
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+}
+
+.one-flex,
+.ofl,
+.o-fl,
+.oflex {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    
+    
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.two-flex,
+.twfl,
+.tw-fl,
+.twflex {
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    
+    
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+.three-flex,
+.thfl,
+.th-fl,
+.thflex {
+    -webkit-box-flex: 3;
+    -moz-box-flex: 3;
+    
+    
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+}
+
+.four-flex,
+.ff,
+.fofl,
+.fo-fl,
+.fflex {
+    -webkit-box-flex: 4;
+    -moz-box-flex: 4;
+    
+    
+    -webkit-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+}
+
+/* FLEXBOX JUSTIFY-CONTENT - HOW SHOULD THEY BE PLACED */
+
+.flexbox-left, .fbox-left {
+    -ms-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.flexbox-right, .fbox-right {
+    -ms-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.flexbox-center, .fbox-center {
+    -ms-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+}
+
+.flexbox-space-between, .fbox-space-between {
+    -ms-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.flexbox-space-around, .fbox-space-around {
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    justify-content: space-around;
+}
+
+/* ALIGN */
+
+    /*
+    STRETCH
+    /////// */
+
+    .flexbox-stretch, .fbox-stretch { /* CONTENT */
+        -webkit-align-content: stretch;
+        align-content: stretch;
+    }
+
+    .flexbox-stretch-items, .fbox-stretch-items { /* ITEMS */
+        -webkit-align-items: stretch;
+        align-items: stretch;
+    }
+
+    .flexbox-stretch-self, .fbox-stretch-self { /* SELF */
+        -webkit-align-self: stretch;
+        align-self: stretch;
+    }
+
+    /*
+    CENTER
+    ////// */
+
+    .flexbox-center, .fbox-center { /* CONTENT */
+        -webkit-align-content: center;
+        align-content: center;
+    }
+
+    .flexbox-center-items, .fbox-center-items { /* ITEMS */
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .flexbox-center-self, .fbox-center-self { /* SELF */
+        -webkit-align-self: center;
+        align-self: center;
+    }
+
+    /*
+    FLEX START = LEFT
+    ///////////////// */
+
+    .flexbox-flex-start, .fbox-flex-start { /* CONTENT */
+        -webkit-align-content: flex-start;
+        align-content: flex-start;
+    }
+
+    .flexbox-flex-start-items, .fbox-flex-start-items { /* ITEMS */
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+    }
+
+    .flexbox-flex-start-self, .fbox-flex-start-self { /* SELF */
+        -webkit-align-self: flex-start;
+        align-self: flex-start;
+    }
+
+    /*
+    FLEX START = RIGHT
+    ////////////////// */
+
+    .flexbox-flex-end, .fbox-flex-end { /* CONTENT */
+        -webkit-align-content: flex-end;
+        align-content: flex-end;
+    }
+
+    .flexbox-flex-end-items, .fbox-flex-end-items { /* ITEMS */
+        -webkit-align-items: flex-end;
+        align-items: flex-end;
+    }
+
+    .flexbox-flex-end-self, .fbox-flex-end-self { /* SELF */
+        -webkit-align-self: flex-end;
+        align-self: flex-end;
+    }
+
+    /*
+    SPACE-BETWEEN
+    /////////////*/
+
+    .flexbox-space-between, .fbox-space-between { /* CONTENT */
+        -webkit-align-content: space-between;
+        align-content: space-between;
+    }
+
+    .flexbox-space-between-items, .fbox-space-between-items { /* ITEMS */
+        -webkit-align-items: space-between;
+        align-items: space-between;
+    }
+
+    .flexbox-space-between-self, .fbox-space-between-self { /* SELF */
+        -webkit-align-self: space-between;
+        align-self: space-between;
+    }
+
+    /*
+    SPACE-AROUND
+    //////////// */
+
+    .flexbox-space-around, .fbox-space-around { /* CONTENT */
+        -webkit-align-content: space-around;
+        align-content: space-around;
+    }
+
+    .flexbox-space-around-items, .fbox-space-around-items { /* ITEMS */
+        -webkit-align-items: space-around;
+        align-items: space-around;
+    }
+
+    .flexbox-space-around-self, .fbox-space-around-self { /* SELF */
+        -webkit-align-self: space-around;
+        align-self: space-around;
+    }
+
+/* PRESETS/ALREADY DONE FLEXBOXES
+--------------------------------- */
+
+.flexbox-1 {
+    display: -webkit-box; /* 2009 Fallback */
+    display: -moz-box; /* 2009 Fallback */
+    display: -ms-Flexbox;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    /* GIVE THE FLEXBOXES A box-sizing: border-box; SO PADDING, BORDER, ETC. CAN BE ADDED */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box
+    box-sizing: border-box;
+    
+    -webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -ms-flex-direction: column;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-flow: column wrap;
+    -moz-flex-flow: column wrap;
+    flex-flow: column wrap;
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+.flexbox-1 div,
+.flexbox-1 div#header,
+.flexbox-1 div#footer,
+.flexbox-1 div.header,
+.flexbox-1 div.footer,
+.flexbox-1 header,
+.flexbox-1 footer {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.flexbox-1 header,
+.flexbox-1 div#header,
+.flexbox-1 div.header,
+.flexbox-1 > *:nth-child(1) {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+    
+    background-color: #000;
+}
+
+.flexbox-1 section,
+.flexbox-1 div#section,
+.flexbox-1 div.section,
+.flexbox-1 > *:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+    
+    -webkit-box-flex: 4;
+    -moz-box-flex: 4;
+    -webkit-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+    
+    display: -webkit-box; /* 2009 Fallback */
+    display: -moz-box; /* 2009 Fallback */
+    display: -ms-Flexbox;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    /* GIVE THE FLEXBOXES A box-sizing: border-box; SO PADDING, BORDER, ETC. CAN BE ADDED */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box
+    box-sizing: border-box;
+    
+    -webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+    .flexbox-1 section div,
+    .flexbox-1 section aside,
+    .flexbox-1 section article,
+    .flexbox-1 div#section div,
+    .flexbox-1 div#section aside,
+    .flexbox-1 div#section article,
+    .flexbox-1 div.section div,
+    .flexbox-1 div.section aside,
+    .flexbox-1 div.section article {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        -webkit-align-content: stretch;
+        align-content: stretch;
+    }
+
+    .flexbox-1 section article,
+    .flexbox-1 div#section div#article,
+    .flexbox-1 div#section article,
+    .flexbox-1 div.section div.article,
+    .flexbox-1 div.section article,
+    .flexbox-1 * > *:nth-child(1) {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+    
+        background-color: #aaa;
+    }
+
+    .flexbox-1 section aside,
+    .flexbox-1 div#section div#aside,
+    .flexbox-1 div#section aside,
+    .flexbox-1 div.section div.aside,
+    .flexbox-1 div.section aside,
+    .flexbox-1 * > *:nth-child(2) {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+    
+        background-color: #ccc;
+    }
+
+.flexbox-1 footer,
+.flexbox-1 div#footer,
+.flexbox-1 div.footer,
+.flexbox-1 > *:nth-child(3) {
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3;
+    
+    background-color: #eee;
+}
