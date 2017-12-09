@@ -4,12 +4,16 @@ My Work In Progress Lib
 This is a work in progress "library" to make my workflow faster and easier. If others want to use it, they can.
 
 Flexbox
--------------------------------------
+--------------------------------------------
 
 Check the unminified "flexbox.css" version for a more extensive read on the classes.
 
 
 `.flexbox, .fbox` - The main flexbox CSS class to make the flex possible (with the display: flex and its fallbacks for older browser versions).
+
+**Flexbox Order Classes**
+--------------------------------------------
+*To order the flexbox items/children, up to 4 (basically changed the number **1** to 2, 3, 4, 5, 6, 7, 8). Higher values will be added in due time.*
 
 ```
 .flex-order-1,
@@ -18,10 +22,17 @@ Check the unminified "flexbox.css" version for a more extensive read on the clas
 .flor1,
 .fl-or-1
 ```
-To order the flexbox items/children, up to 4 (basically changed the number **1** to 2, 3, 4, 5, 6, 7, 8). Higher values will be added in due time.
 
-`.flexbox-row or .flexbox-column` - To either make the flexbox children align in a row or column direction/manner.
+**Flexbox Direction Classes**
+--------------------------------------------
+`.flexbox-row, .flexbox-row-reverse, .flexbox-column or .flex-column-reverse`
 
+**Flexbox Wrap Classes**
+--------------------------------------------
+`.flexbox-nowrap, .flexbox-wrap, .flexbox-wrap-reverse`
+
+**Flexbox "Size" Classes**
+--------------------------------------------
 ```
 .auto-flex, /* For Auto-Flex, give the container of the flexboxes the .flexbox class. Otherwise it won't auto-grow. */
 .a-f, /* Auto */
@@ -83,20 +94,29 @@ To order the flexbox items/children, up to 4 (basically changed the number **1**
 .flexfi,
 .flex-5
 ```
-All the flex options (`flex: <number>`). Multiple for each to give more choices and fallbacks.
+*Multiple classes to give more choices and fallbacks.*
 
-`.flexbox-left, .fbox-left` - The justify content for flex. One can change "left" into: right, center, space-between and/or space-around.
+**Justify Content Classes**
+--------------------------------------------
+```
+.flexbox-left, .fbox-left,
+.flexbox-right, .fbox-right,
+.flexbox-center, .fbox-center,
+.flexbox-space-between, .fbox-space-between,
+.flexbox-space-around, .fbox-space-around
+```
 
+**Align Classes**
+--------------------------------------------
 ```
 .flexbox-stretch, .fbox-stretch,
 .flexbox-stretch-items, .fbox-stretch-items,
 .flexbox-stretch-self, .fbox-stretch-self
 ```
-For the flex "align". Change stretch to either: center, flex-start, flex-end, space-between and/or space-around.
 
 ** PRESETS / ALREADY DONE FLEXBOX LAYOUTS **
 --------------------------------------------
-These presets/layouts should work from start. Give the container the flexbox main CSS class name.
+*These presets/layouts should work from start. Give the container the flexbox main CSS class name.*
 
 FLEXBOX-1
 --------------------------------------------
