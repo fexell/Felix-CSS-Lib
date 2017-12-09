@@ -4,7 +4,7 @@ My Work In Progress Lib
 This is a work in progress CSS file to make my workflow faster and easier. If others want to use it, they can.
 
 Flexbox
----------
+-------------------------------------
 
 .flexbox, .fbox - The main flexbox CSS class to make the flex possible (with the display: flex and its fallbacks for older browser versions).
 
@@ -49,8 +49,8 @@ Flexbox
 --------------------------------------------
 These presets/layouts should work from start. Give the container the flexbox main CSS class name.
 
---- FLEXBOX-1 ---
-----/////////----
+FLEXBOX-1
+--------------------------------------------
 .flexbox-1 - Will give you a header, a section/content with 2 rowed flexboxes and a footer. Remember it will always be 100vw and 100vh, no matter the screen size.
 
 Check the unminified version for a more extensive read on the classes.
