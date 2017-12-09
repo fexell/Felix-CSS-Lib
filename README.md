@@ -100,7 +100,7 @@ These presets/layouts should work from start. Give the container the flexbox mai
 
 FLEXBOX-1
 --------------------------------------------
-`.flexbox-1` - Will give you a header, a section/content with 2 rowed flexboxes and a footer. Remember it will always be 100vw and 100vh, no matter the screen size.
+`.flexbox-1` - Will give you a header, a section/content with 2 rowed flexboxes and a footer. Remember it will always be 100% and 100vh, no matter the screen size.
 
 **Example 1:**
 ```
