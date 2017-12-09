@@ -18,7 +18,7 @@ Check the unminified "flexbox.css" version for a more extensive read on the clas
 .flor1,
 .fl-or-1
 ```
-To order the flexbox items/children, up to 4 (basically changed the number "1" to 2, 3 or 4). Higher values will be added in due time.
+To order the flexbox items/children, up to 4 (basically changed the number **1** to 2, 3, 4, 5, 6, 7, 8). Higher values will be added in due time.
 
 `.flexbox-row or .flexbox-column` - To either make the flexbox children align in a row or column direction/manner.
 
@@ -71,9 +71,19 @@ To order the flexbox items/children, up to 4 (basically changed the number "1" t
 .flfo,
 .fl-fo,
 .flexfo,
-.flex-4
+.flex-4,
+.five-flex, /* 5 *&
+.fif,
+.fifl,
+.fi-fl,
+.fiflex,
+.flex-five,
+.flfi,
+.fl-fi,
+.flexfi,
+.flex-5
 ```
-All the flex options (flex: <number>). Multiple for each to give more choices.
+All the flex options (`flex: <number>`). Multiple for each to give more choices and fallbacks.
 
 `.flexbox-left, .fbox-left` - The justify content for flex. Can changed "left" into: right, center, space-between and/or space-around.
 
