@@ -301,13 +301,13 @@ FLEXBOX
 .fl-fi,
 .flexfi,
 .flex-5 {
-    -webkit-box-flex: 4 !important;
-    -moz-box-flex: 4 !important;
+    -webkit-box-flex: 5 !important;
+    -moz-box-flex: 5 !important;
     
     
-    -webkit-flex: 4 !important;
-    -ms-flex: 4 !important;
-    flex: 4 !important;
+    -webkit-flex: 5 !important;
+    -ms-flex: 5 !important;
+    flex: 5 !important;
 }
 
 /* FLEXBOX JUSTIFY-CONTENT - HOW SHOULD THEY BE PLACED */
