@@ -1,4 +1,4 @@
-# Felix-CSS-Lib
+# Felix-Lib
 My Work In Progress Lib
 
 This is a work in progress "library" to make my workflow faster and easier. If others want to use it, they can.
