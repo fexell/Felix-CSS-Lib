@@ -1,7 +1,7 @@
 # Felix-CSS-Lib
 My Work In Progress Lib
 
-This is a work in progress CSS file to make my workflow faster and easier. If others want to use it, they can.
+This is a work in progress "library" to make my workflow faster and easier. If others want to use it, they can.
 
 Flexbox
 -------------------------------------
@@ -85,7 +85,7 @@ To order the flexbox items/children, up to 4 (basically changed the number **1**
 ```
 All the flex options (`flex: <number>`). Multiple for each to give more choices and fallbacks.
 
-`.flexbox-left, .fbox-left` - The justify content for flex. Can changed "left" into: right, center, space-between and/or space-around.
+`.flexbox-left, .fbox-left` - The justify content for flex. One can change "left" into: right, center, space-between and/or space-around.
 
 ```
 .flexbox-stretch, .fbox-stretch,
@@ -100,7 +100,7 @@ These presets/layouts should work from start. Give the container the flexbox mai
 
 FLEXBOX-1
 --------------------------------------------
-`.flexbox-1` - Will give you a header, a section/content with 2 rowed flexboxes and a footer. Remember it will always be 100% and 100vh, no matter the screen size.
+`.flexbox-1` - Will give you a header, a section/content with 2 rowed flexboxes and a footer. Remember it will always be 100% width and 100vh height, no matter the screen size.
 
 **Example 1:**
 ```
