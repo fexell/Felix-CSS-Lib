@@ -1,4 +1,3 @@
-
 /*
 FLEXBOX
 ------- */
@@ -96,6 +95,30 @@ FLEXBOX
     order: 6;
 }
 
+.flex-order-7,
+.fo7,
+.f-o-7,
+.flor7,
+.fl-or-7 {
+    -webkit-box-ordinal-group: 7;
+    -moz-box-ordinal-group: 7;
+    -ms-flex-order: 7;
+    -webkit-order: 7;
+    order: 7;
+}
+
+.flex-order-8,
+.fo8,
+.f-o-8,
+.flor8,
+.fl-or-8 {
+    -webkit-box-ordinal-group: 8;
+    -moz-box-ordinal-group: 8;
+    -ms-flex-order: 8;
+    -webkit-order: 8;
+    order: 8;
+}
+
 /* FLEX SIZE 
 //////////// */
 
@@ -126,23 +149,50 @@ FLEXBOX
 .aufl,
 .au-fl,
 .aflex,
+.flex-auto,
+.f-a,
+.flau,
+.fl-au,
+.flexa,
 .one-flex,
+.o-f,
 .ofl,
 .o-fl,
 .oflex,
+.flex-one,
+.f-o,
+.flon,
+.fl-on,
+.flexo,
+.flex-1,
 .two-flex,
 .twfl,
 .tw-fl,
 .twflex,
+.flex-two,
+.fltw,
+.fl-tw,
+.flextw,
+.flex-2,
 .three-flex,
 .thfl,
 .th-fl,
 .thflex,
+.flex-three,
+.flth,
+.fl-th,
+.flexth,
+.flex-3,
 .four-flex,
 .ff,
 .fofl,
 .fo-fl,
-.fflex {
+.fflex,
+.flex-four,
+.flfo,
+.fl-fo,
+.flexfo,
+.flex-4 {
     -webkit-flex-basis: auto;
     -moz-flex-basis: auto;
     flex-basis: auto;
@@ -152,19 +202,31 @@ FLEXBOX
 .a-f,
 .aufl,
 .au-fl,
-.aflex {
-    -webkit-box-flex: auto;
-    -moz-box-flex: auto;
+.aflex,
+.flex-auto,
+.f-a,
+.flau,
+.fl-au,
+.flexa {
+    -webkit-box-flex: auto !important;
+    -moz-box-flex: auto !important;
     
-    -webkit-flex: auto;
-    -ms-flex: auto;
-    flex: auto;
+    -webkit-flex: auto !important;
+    -ms-flex: auto !important;
+    flex: auto !important;
 }
 
 .one-flex,
+.o-f,
 .ofl,
 .o-fl,
-.oflex {
+.oflex,
+.flex-one,
+.f-o,
+.flon,
+.fl-on,
+.flexo,
+.flex-1 {
     -webkit-box-flex: 1 !important;
     -moz-box-flex: 1 !important;
     
@@ -177,7 +239,12 @@ FLEXBOX
 .two-flex,
 .twfl,
 .tw-fl,
-.twflex {
+.twflex,
+.flex-two,
+.fltw,
+.fl-tw,
+.flextw,
+.flex-2 {
     -webkit-box-flex: 2 !important;
     -moz-box-flex: 2 !important;
     
@@ -190,7 +257,12 @@ FLEXBOX
 .three-flex,
 .thfl,
 .th-fl,
-.thflex {
+.thflex,
+.flex-three,
+.flth,
+.fl-th,
+.flexth,
+.flex-3 {
     -webkit-box-flex: 3 !important;
     -moz-box-flex: 3 !important;
     
@@ -204,7 +276,31 @@ FLEXBOX
 .ff,
 .fofl,
 .fo-fl,
-.fflex {
+.fflex,
+.flex-four,
+.flfo,
+.fl-fo,
+.flexfo,
+.flex-4 {
+    -webkit-box-flex: 4 !important;
+    -moz-box-flex: 4 !important;
+    
+    
+    -webkit-flex: 4 !important;
+    -ms-flex: 4 !important;
+    flex: 4 !important;
+}
+
+.five-flex,
+.fif,
+.fifl,
+.fi-fl,
+.fiflex,
+.flex-five,
+.flfi,
+.fl-fi,
+.flexfi,
+.flex-5 {
     -webkit-box-flex: 4 !important;
     -moz-box-flex: 4 !important;
     
@@ -370,8 +466,8 @@ FLEXBOX
         align-self: space-around;
     }
 
-/* PRESETS/ALREADY DONE FLEXBOXES
---------------------------------- */
+/* PRESETS/ALREADY DONE FLEXBOX LAYOUTS
+--------------------------------------- */
 
 .flexbox-1 {
     display: -webkit-box; /* 2009 Fallback */
@@ -397,7 +493,7 @@ FLEXBOX
     -moz-flex-flow: column wrap;
     flex-flow: column wrap;
     
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
