@@ -53,4 +53,27 @@ FLEXBOX-1
 --------------------------------------------
 **.flexbox-1** - Will give you a header, a section/content with 2 rowed flexboxes and a footer. Remember it will always be 100vw and 100vh, no matter the screen size.
 
+**Example 1:**
+```
+<div class="flexbox-1">
+<header></header>
+<section>
+  <article></article>
+  <aside></aside>
+</section>
+<footer></footer>
+</div>
+```
+**Example 2:**
+```
+<div class="flexbox-1">
+  <div></div>
+  <div>
+    <div></div>
+    <div></div>
+  </div>
+  <div></div>
+</div>
+```
+
 Check the unminified version for a more extensive read on the classes.
