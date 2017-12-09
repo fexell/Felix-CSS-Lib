@@ -21,6 +21,7 @@ Check the unminified "flexbox.css" version for a more extensive read on the clas
 .f-o-1,
 .flor1,
 .fl-or-1
+...
 ```
 
 **Flexbox Direction Classes**
