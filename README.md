@@ -65,6 +65,7 @@ FLEXBOX-1
   </section>
   
   <footer></footer>
+  
 </div>
 ```
 **Example 2:**
