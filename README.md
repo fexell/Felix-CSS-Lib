@@ -35,8 +35,8 @@ Check the unminified "flexbox.css" version for a more extensive read on the clas
 **Flexbox "Size" Classes**
 --------------------------------------------
 ```
-.auto-flex, /* For Auto-Flex, give the container of the flexboxes the .flexbox class. Otherwise it won't auto-grow. */
-.a-f, /* Auto */
+.auto-flex, /* Auto */
+.a-f,
 .aufl,
 .au-fl,
 .aflex,
