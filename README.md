@@ -72,7 +72,7 @@ To order the flexbox items/children, up to 4 (basically changed the number **1**
 .fl-fo,
 .flexfo,
 .flex-4,
-.five-flex, /* 5 *&
+.five-flex, /* 5 */
 .fif,
 .fifl,
 .fi-fl,
