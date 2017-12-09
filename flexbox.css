@@ -192,7 +192,17 @@ FLEXBOX
 .flfo,
 .fl-fo,
 .flexfo,
-.flex-4 {
+.flex-4,
+.five-flex,
+.fif,
+.fifl,
+.fi-fl,
+.fiflex,
+.flex-five,
+.flfi,
+.fl-fi,
+.flexfi,
+.flex-5 {
     -webkit-flex-basis: auto;
     -moz-flex-basis: auto;
     flex-basis: auto;
