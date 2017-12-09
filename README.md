@@ -56,23 +56,30 @@ FLEXBOX-1
 **Example 1:**
 ```
 <div class="flexbox-1">
-<header></header>
-<section>
-  <article></article>
-  <aside></aside>
-</section>
-<footer></footer>
+
+  <header></header>
+  
+  <section>
+    <article></article>
+    <aside></aside>
+  </section>
+  
+  <footer></footer>
 </div>
 ```
 **Example 2:**
 ```
 <div class="flexbox-1">
-  <div></div>
-  <div>
-    <div></div>
-    <div></div>
+
+  <div></div> <!-- HEADER DIV -->
+  
+  <div> <!-- SECTION / CONTENT DIV -->
+    <div></div> <!-- ARTICLE / LEFT SIDE CONTENT -->
+    <div></div> <!-- ASIDE / RIGHT SIDE CONTENT -->
   </div>
-  <div></div>
+  
+  <div></div> <!-- FOOTER DIV -->
+  
 </div>
 ```
 
