@@ -21,12 +21,12 @@
 /* -------------------------- */
 
 .break-1, .break-2, .break-3, .break-4, .break-5, .break-6, .break-7, .break-8,
-.flex-order-1, /* UP TO ORDER: 8; */
 
 
-/* Flexbox Order, Up to 8 */
+/* Flexbox Order, Up to 8, flex-order: <number> */
 /* -------------------------- */
 
+.flex-order-1,
 .fo1,
 .f-o-1,
 .flor1,
@@ -59,6 +59,7 @@
 
 /* Flexbox Flex: 1; ... */
 /* -------------------------- */
+
 .auto-flex,
 .a-f,
 .aufl,
