@@ -28,7 +28,7 @@ FLEXBOX
     display: -ms-Flexbox;
     display: flexbox;
     display: -webkit-flex;
-    display -js-flex;
+    display -js-flex; /* For flexibility.js - https://github.com/jonathantneal/flexibility */
     display: flex;
     
     -webkit-box-flex: 0; /* 2009 Fallback */
@@ -847,6 +847,7 @@ FLEXBOX
     display: -ms-Flexbox;
     display: flexbox;
     display: -webkit-flex;
+    display: -js-flex; /* For flexibility.js - https://github.com/jonathantneal/flexibility */
     display: flex;
     
     /* GIVE THE FLEXBOXES A box-sizing: border-box; SO PADDING, BORDER, ETC. CAN BE ADDED */
