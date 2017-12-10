@@ -60,7 +60,7 @@
 /* Flexbox Flex: 1; ... */
 /* -------------------------- */
 
-.auto-flex,
+.auto-flex, /* AUTO */
 .a-f,
 .aufl,
 .au-fl,
@@ -70,7 +70,7 @@
 .flau,
 .fl-au,
 .flexa,
-.one-flex,
+.one-flex, /* 1 */
 .o-f,
 .ofl,
 .o-fl,
@@ -81,7 +81,7 @@
 .fl-on,
 .flexo,
 .flex-1,
-.two-flex,
+.two-flex, /* 2 */
 .twfl,
 .tw-fl,
 .twflex,
@@ -90,7 +90,7 @@
 .fl-tw,
 .flextw,
 .flex-2,
-.three-flex,
+.three-flex, /* 3 */
 .thfl,
 .th-fl,
 .thflex,
@@ -99,7 +99,7 @@
 .fl-th,
 .flexth,
 .flex-3,
-.four-flex,
+.four-flex, /* 4 */
 .ff,
 .fofl,
 .fo-fl,
@@ -109,7 +109,7 @@
 .fl-fo,
 .flexfo,
 .flex-4,
-.five-flex,
+.five-flex, /* 5 */
 .fif,
 .fifl,
 .fi-fl,
