@@ -1,3 +1,77 @@
+/* GENERAL CLASSES
+------------------ */
+
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.center {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.absolute, .absolute.center {
+    position:absolute;
+}
+
+.fixed, .fixed.center {
+    position: fixed;
+}
+
+.relative, .relative.center {
+    position: relative;
+}
+
+.force-center {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 0 auto;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.box-sizing-border-box, .box-sizing-borderbox, .box-sizing-b-b, .box-sizing-bb, .b-s-b-b, .bsbb {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box
+    box-sizing: border-box;
+}
+
+.hover-hidden {
+    visibility: hidden;
+}
+
+.hover-visible {
+    visibility: visible;
+}
+
+.no-list, .no-ul, .noli, .noul {
+    list-style-type: none;
+}
+
 /*
 FLEXBOX
 ------- */

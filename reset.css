@@ -1,0 +1,48 @@
+/*
+////////////////////////
+FELIX RESET CSS FOR MK
+**
+**
+Copyright: Felix Cervin, Mediakonsulterna
+////////////////////////
+----------------------------------------- */
+
+
+html, body, section, article, aside, header, footer, nav, dialog, figure, div, p, span, i, em, form, table, tr, td, object, iframe, h1, h2, h3, h4, h5, strong, audio, video, center, b, var, dl, dt, dd, ol, ul, li, blockquote, label, canvas, tbody, tfoot, thead, th, a, q, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, textarea, input:focus, textarea:focus {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+h1 {
+    font-size: 200%; /* 2em, 32px */
+}
+
+h2 {
+    font-size: 150%; /* 1.5em, 24px, 18pt */
+}
+
+h3 {
+    font-size: 112.5%; /* 1.125em, 18px, 14pt */
+}
+
+h4 {
+    font-size: 106.3%; /* 1.063em, 17px, 13pt */
+}
+
+h5 {
+    font-size: 100%; /* 1em, 16px, 12pt */
+}
