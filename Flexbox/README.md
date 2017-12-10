@@ -131,11 +131,22 @@
 /* Flexbox Align */
 /* -------------------------- */
 
+/* STRETCH */
 .align-stretch, .fbox-stretch, .align-stretch-items, .fbox-stretch-items, .align-stretch-self, .fbox-stretch-self,
+
+/* CENTER */
 .align-center, .fbox-align-center, .align-center-items, .fbox-center-items, .align-center-self, .fbox-center-self,
+
+/* FLEX-START */
 .flex-start, .fbox-flex-start, .flex-start-items, .fbox-flex-start-items, .flex-start-self, .fbox-flex-start-self,
+
+/* FLEX-END */
 .flex-end, .fbox-flex-end, .flex-end-items, .fbox-flex-end-items, .flex-end-self, .fbox-flex-end-self,
+
+/* SPACE-BETWEEN */
 .align-between, .fbox-align-between, .align-between-items, .fbox-align-between-items, .align-between-self, .fbox-align-between-self,
+
+/* SPACE-AROUND */
 .align-around, .fbox-align-around, .align-around-items, .fbox-align-around-items, .align-around-self, .fbox-align-around-self,
 
 
