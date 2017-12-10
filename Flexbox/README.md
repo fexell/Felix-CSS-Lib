@@ -2,44 +2,60 @@
 ```
 /* Flexbox Default */
 /* -------------------------- */
+
 .flexbox, /* Flexbox Display Only */
 .fbox, /* Flexbox Display Only */
 .flexbox-default, /* Flexbox Display Only */
 .flexbox-container-default, /* Flexbox Row Default */
 .flexbox-container-default-column, /* Flexbox Column Default */
 
+
 /* Flexbox flex: 1 0 0; ... */
 /* -------------------------- */
+
 .flexbox-default-1, .flexbox-default-2, .flexbox-default-3, .flexbox-default-4, .flexbox-default-5, .flexbox-default-6, .flexbox-default-7,
 .flexbox-default-8,
 
+
 /* Min-width */
 /* -------------------------- */
+
 .break-1, .break-2, .break-3, .break-4, .break-5, .break-6, .break-7, .break-8,
 .flex-order-1, /* UP TO ORDER: 8; */
 
+
 /* Flexbox Order, Up to 8 */
 /* -------------------------- */
+
 .fo1,
 .f-o-1,
 .flor1,
 .fl-or-1,
 
+
 /* Flexbox Direction */
 /* -------------------------- */
+
 .flexbox-row, .flexbox-row-reverse, .flexbox-column, .flexbox-column-reverse,
+
 
 /* Flexbox Wrap */
 /* -------------------------- */
+
 .flexbox-nowrap, .flexbox-wrap, .flexbox-wrap-reverse,
+
 
 /* Flexbox Grow */
 /* -------------------------- */
+
 .grow-1, .grow-2, .grow-3, .grow-4, .grow-5, .grow-6, .grow-7, .grow-8
+
 
 /* Flexbox Shrink */
 /* -------------------------- */
+
 .shrink-1, .shrink-2, .shrink-3, .shrink-4, .shrink-5, .shrink-6, .shrink-7, .shrink-8,
+
 
 /* Flexbox Flex: 1; ... */
 /* -------------------------- */
@@ -103,13 +119,17 @@
 .flexfi,
 .flex-5,
 
+
 /* Flexbox Justify Content */
 /* -------------------------- */
+
 .justify-left, .just-left, .justify-right, .just-right, .justify-center, .just-center, .justify-space-between, .just-space-between,
 .justify-space-around, .just-space-around,
 
+
 /* Flexbox Align */
 /* -------------------------- */
+
 .align-stretch, .fbox-stretch, .align-stretch-items, .fbox-stretch-items, .align-stretch-self, .fbox-stretch-self,
 .align-center, .fbox-align-center, .align-center-items, .fbox-center-items, .align-center-self, .fbox-center-self,
 .flex-start, .fbox-flex-start, .flex-start-items, .fbox-flex-start-items, .flex-start-self, .fbox-flex-start-self,
@@ -117,7 +137,9 @@
 .align-between, .fbox-align-between, .align-between-items, .fbox-align-between-items, .align-between-self, .fbox-align-between-self,
 .align-around, .fbox-align-around, .align-around-items, .fbox-align-around-items, .align-around-self, .fbox-align-around-self,
 
+
 /* LAYOUTS */
 /* -------------------------- */
+
 .flexbox-1
 ```
