@@ -1,4 +1,3 @@
-
 /*
 FLEXBOX
 ------- */
@@ -7,10 +6,11 @@ FLEXBOX
 .flexbox,
 .fbox {
     display: -webkit-box; /* 2009 Fallback */
+    display: -khtml-box; /* 2009 Fallback */
     display: -moz-box; /* 2009 Fallback */
+    display: box; /* 2009 Fallback */
     display: -ms-Flexbox;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    display: flexbox;
     display: -webkit-flex;
     display: flex;
     
@@ -96,29 +96,128 @@ FLEXBOX
     order: 6;
 }
 
+.flex-order-7,
+.fo7,
+.f-o-7,
+.flor7,
+.fl-or-7 {
+    -webkit-box-ordinal-group: 7;
+    -moz-box-ordinal-group: 7;
+    -ms-flex-order: 7;
+    -webkit-order: 7;
+    order: 7;
+}
+
+.flex-order-8,
+.fo8,
+.f-o-8,
+.flor8,
+.fl-or-8 {
+    -webkit-box-ordinal-group: 8;
+    -moz-box-ordinal-group: 8;
+    -ms-flex-order: 8;
+    -webkit-order: 8;
+    order: 8;
+}
+
 /* FLEX SIZE 
 //////////// */
 
+    /* 2009 Fallbacks */
+
+
+.flexbox-row, .flexbox-row-reverse {
+    -webkit-box-orient: horizontal; /* 2009 Fallback */
+    -khtml-box-orient: horizontal; /* 2009 Fallback */
+	-moz-box-orient: horizontal; /* 2009 Fallback */
+    -ms-box-orient: horizontal; /* 2009 Fallback */
+    -o-box-orient: horizontal; /* 2009 Fallback */
+    box-orient: horizontal; /* 2009 Fallback */
+}
+
+.flexbox-column, .flexbox-column-reverse {
+    -webkit-box-orient: vertical; /* 2009 Fallback */
+    -khtml-box-orient: vertical; /* 2009 Fallback */
+	-moz-box-orient: vertical; /* 2009 Fallback */
+    -ms-box-orient: vertical; /* 2009 Fallback */
+    -o-box-orient: vertical; /* 2009 Fallback */
+    box-orient: vertical; /* 2009 Fallback */
+}
+
+.flexbox-row, .flexbox-column {
+    -webkit-box-direction: normal; /* 2009 Fallback */
+    -khtml-box-direction: normal; /* 2009 Fallback */
+    -moz-box-direction: normal; /* 2009 Fallback */
+    -ms-box-direction: normal; /* 2009 Fallback */
+    -o-box-direction: normal; /* 2009 Fallback */
+    box-direction: normal; /* 2009 Fallback */
+}
+
+.flexbox-row-reverse, .flexbox-column-reverse {
+    -webkit-box-direction: reverse; /* 2009 Fallback */
+    -khtml-box-direction: reverse; /* 2009 Fallback */
+    -moz-box-direction: reverse; /* 2009 Fallback */
+    -ms-box-direction: reverse; /* 2009 Fallback */
+    -o-box-direction: reverse; /* 2009 Fallback */
+    box-direction: reverse; /* 2009 Fallback */
+}
+
+    /* -- END OF 2009 FALLBACKS -- */
+
+
 .flexbox-row {
-    -webkit-box-orient: horizontal;
-	-moz-box-orient: horizontal;
-    -ms-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
     -ms-flex-direction: row;
-    -ms-flex-wrap: wrap;
-    -webkit-flex-flow: row wrap;
-    -moz-flex-flow: row wrap;
-    flex-flow: row wrap;
+    -o-flex-direction: row;
+    flex-direction: row;
+}
+
+.flexbox-row-reverse {
+    -webkit-flex-direction: row-reverse;
+    -moz-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    -o-flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .flexbox-column {
-    -webkit-box-orient: vertical;
-	-moz-box-orient: vertical;
-    -ms-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
     -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+.flexbox-column-reverse {
+    -webkit-flex-direction: column-reverse;
+    -moz-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    -o-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+
+/* FLEX WRAP */
+
+.flexbox-nowrap {
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.flexbox-wrap {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    -webkit-flex-flow: column wrap;
-    -moz-flex-flow: column wrap;
-    flex-flow: column wrap;
+    flex-wrap: wrap;
+}
+
+.flexbox-wrap-reverse {
+    -webkit-flex-wrap: wrap-reverse;
+    -moz-flex-wrap: wrap-reverse;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
 }
 
 .auto-flex, /* For Auto-Flex, give the container of the flexboxes the .flexbox class. Otherwise it won't auto-grow. */
@@ -126,23 +225,60 @@ FLEXBOX
 .aufl,
 .au-fl,
 .aflex,
+.flex-auto,
+.f-a,
+.flau,
+.fl-au,
+.flexa,
 .one-flex,
+.o-f,
 .ofl,
 .o-fl,
 .oflex,
+.flex-one,
+.f-o,
+.flon,
+.fl-on,
+.flexo,
+.flex-1,
 .two-flex,
 .twfl,
 .tw-fl,
 .twflex,
+.flex-two,
+.fltw,
+.fl-tw,
+.flextw,
+.flex-2,
 .three-flex,
 .thfl,
 .th-fl,
 .thflex,
+.flex-three,
+.flth,
+.fl-th,
+.flexth,
+.flex-3,
 .four-flex,
 .ff,
 .fofl,
 .fo-fl,
-.fflex {
+.fflex,
+.flex-four,
+.flfo,
+.fl-fo,
+.flexfo,
+.flex-4,
+.five-flex,
+.fif,
+.fifl,
+.fi-fl,
+.fiflex,
+.flex-five,
+.flfi,
+.fl-fi,
+.flexfi,
+.flex-5 {
     -webkit-flex-basis: auto;
     -moz-flex-basis: auto;
     flex-basis: auto;
@@ -152,24 +288,39 @@ FLEXBOX
 .a-f,
 .aufl,
 .au-fl,
-.aflex {
-    -webkit-box-flex: auto;
-    -moz-box-flex: auto;
+.aflex,
+.flex-auto,
+.f-a,
+.flau,
+.fl-au,
+.flexa {
+    -webkit-box-flex: auto !important; /* 2009 Fallback */
+    -moz-box-flex: auto !important; /* 2009 Fallback */
+    box-flex: auto !important; /* 2009 Fallback */
     
-    -webkit-flex: auto;
-    -ms-flex: auto;
-    flex: auto;
+    -webkit-flex: auto !important;
+    -ms-flex: auto !important;
+    flex: auto !important;
 }
 
 .one-flex,
+.o-f,
 .ofl,
 .o-fl,
-.oflex {
-    -webkit-box-flex: 1 !important;
-    -moz-box-flex: 1 !important;
+.oflex,
+.flex-one,
+.f-o,
+.flon,
+.fl-on,
+.flexo,
+.flex-1 {
+    -webkit-box-flex: 1 !important; /* 2009 Fallback */
+    -moz-box-flex: 1 !important; /* 2009 Fallback */
+    box-flex: 1 !important; /* 2009 Fallback */
     
     
     -webkit-flex: 1 !important;
+    -moz-flex: 1 !important;
     -ms-flex: 1 !important;
     flex: 1 !important;
 }
@@ -177,12 +328,19 @@ FLEXBOX
 .two-flex,
 .twfl,
 .tw-fl,
-.twflex {
-    -webkit-box-flex: 2 !important;
-    -moz-box-flex: 2 !important;
+.twflex,
+.flex-two,
+.fltw,
+.fl-tw,
+.flextw,
+.flex-2 {
+    -webkit-box-flex: 2 !important; /* 2009 Fallback */
+    -moz-box-flex: 2 !important; /* 2009 Fallback */
+    box-flex: 2 !important; /* 2009 Fallback */
     
     
     -webkit-flex: 2 !important;
+    -moz-flex: 2 !important;
     -ms-flex: 2 !important;
     flex: 2 !important;
 }
@@ -190,12 +348,19 @@ FLEXBOX
 .three-flex,
 .thfl,
 .th-fl,
-.thflex {
-    -webkit-box-flex: 3 !important;
-    -moz-box-flex: 3 !important;
+.thflex,
+.flex-three,
+.flth,
+.fl-th,
+.flexth,
+.flex-3 {
+    -webkit-box-flex: 3 !important; /* 2009 Fallback */
+    -moz-box-flex: 3 !important; /* 2009 Fallback */
+    box-flex: 3 !important; /* 2009 Fallback */
     
     
     -webkit-flex: 3 !important;
+    -moz-flex: 3 !important;
     -ms-flex: 3 !important;
     flex: 3 !important;
 }
@@ -204,14 +369,42 @@ FLEXBOX
 .ff,
 .fofl,
 .fo-fl,
-.fflex {
-    -webkit-box-flex: 4 !important;
-    -moz-box-flex: 4 !important;
+.fflex,
+.flex-four,
+.flfo,
+.fl-fo,
+.flexfo,
+.flex-4 {
+    -webkit-box-flex: 4 !important; /* 2009 Fallback */
+    -moz-box-flex: 4 !important; /* 2009 Fallback */
+    box-flex: 4 !important; /* 2009 Fallback */
     
     
     -webkit-flex: 4 !important;
+    -moz-flex: 4 !important;
     -ms-flex: 4 !important;
     flex: 4 !important;
+}
+
+.five-flex,
+.fif,
+.fifl,
+.fi-fl,
+.fiflex,
+.flex-five,
+.flfi,
+.fl-fi,
+.flexfi,
+.flex-5 {
+    -webkit-box-flex: 5 !important; /* 2009 Fallback */
+    -moz-box-flex: 5 !important; /* 2009 Fallback */
+    box-flex: 5 !important; /* 2009 Fallback */
+    
+    
+    -webkit-flex: 5 !important;
+    -moz-flex: 5 !important;
+    -ms-flex: 5 !important;
+    flex: 5 !important;
 }
 
 /* FLEXBOX JUSTIFY-CONTENT - HOW SHOULD THEY BE PLACED */
@@ -370,15 +563,15 @@ FLEXBOX
         align-self: space-around;
     }
 
-/* PRESETS/ALREADY DONE FLEXBOXES
---------------------------------- */
+/* PRESETS/ALREADY DONE FLEXBOX LAYOUTS
+--------------------------------------- */
 
 .flexbox-1 {
     display: -webkit-box; /* 2009 Fallback */
     display: -moz-box; /* 2009 Fallback */
+    display: box; /* 2009 Fallback */
     display: -ms-Flexbox;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    display: flexbox;
     display: -webkit-flex;
     display: flex;
     
@@ -388,16 +581,25 @@ FLEXBOX
     -ms-box-sizing: border-box
     box-sizing: border-box;
     
-    -webkit-box-orient: vertical;
-	-moz-box-orient: vertical;
-    -ms-box-orient: vertical;
-    -ms-flex-direction: column;
-    -ms-flex-wrap: wrap;
-    -webkit-flex-flow: column wrap;
-    -moz-flex-flow: column wrap;
-    flex-flow: column wrap;
+    -webkit-box-orient: vertical; /* 2009 Fallback */
+    -khtml-box-orient: vertical; /* 2009 Fallback */
+	-moz-box-orient: vertical; /* 2009 Fallback */
+    -ms-box-orient: vertical; /* 2009 Fallback */
     
-    width: 100vw;
+    -webkit-box-direction: normal; /* 2009 Fallback */
+    -khtml-box-direction: normal; /* 2009 Fallback */
+    -moz-box-direction: normal; /* 2009 Fallback */
+    -ms-box-direction: normal; /* 2009 Fallback */
+    -o-box-direction: normal; /* 2009 Fallback */
+    box-direction: normal; /* 2009 Fallback */
+    
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    
+    width: 100%;
     height: 100vh;
 }
 
@@ -446,9 +648,9 @@ FLEXBOX
     
     display: -webkit-box; /* 2009 Fallback */
     display: -moz-box; /* 2009 Fallback */
+    display: box; /* 2009 Fallback */
     display: -ms-Flexbox;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    display: flexbox;
     display: -webkit-flex;
     display: flex;
     
@@ -458,14 +660,23 @@ FLEXBOX
     -ms-box-sizing: border-box
     box-sizing: border-box;
     
-    -webkit-box-orient: horizontal;
-	-moz-box-orient: horizontal;
-    -ms-box-orient: horizontal;
+    -webkit-box-orient: horizontal; /* 2009 Fallback */
+    -khtml-box-orient: horizontal; /* 2009 Fallback */
+	-moz-box-orient: horizontal; /* 2009 Fallback */
+    -ms-box-orient: horizontal; /* 2009 Fallback */
+    
+    -webkit-box-direction: normal; /* 2009 Fallback */
+    -khtml-box-direction: normal; /* 2009 Fallback */
+    -moz-box-direction: normal; /* 2009 Fallback */
+    -ms-box-direction: normal; /* 2009 Fallback */
+    -o-box-direction: normal; /* 2009 Fallback */
+    box-direction: normal; /* 2009 Fallback */
+    
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
     -ms-flex-direction: row;
-    -ms-flex-wrap: wrap;
-    -webkit-flex-flow: row wrap;
-    -moz-flex-flow: row wrap;
-    flex-flow: row wrap;
+    -o-flex-direction: row;
+    flex-direction: row;
 }
 
     .flexbox-1 section div,
