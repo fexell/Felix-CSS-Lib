@@ -85,10 +85,8 @@ FLEXBOX
 .fbox > *,
 .flexbox-container-default > *,
 .flexbox-container-default-column > * {
-    /* GIVE THE FLEXBOXES A box-sizing: border-box; SO PADDING, BORDER, ETC. CAN BE ADDED */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -104,6 +102,7 @@ FLEXBOX
     display: -ms-Flexbox;
     display: flexbox;
     display: -webkit-flex;
+    display -js-flex;
     display: flex;
     
     -webkit-box-flex: 0; /* 2009 Fallback */
@@ -1001,6 +1000,7 @@ FLEXBOX
     display: -ms-Flexbox;
     display: flexbox;
     display: -webkit-flex;
+    display -js-flex;
     display: flex;
     
     /* GIVE THE FLEXBOXES A box-sizing: border-box; SO PADDING, BORDER, ETC. CAN BE ADDED */

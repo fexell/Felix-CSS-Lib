@@ -7,14 +7,12 @@ FLEXBOX
 .flexbox-default,
 .flexbox-container-default,
 .flexbox-container-default-column,
-.flexbox > .flexbox *,
-.fbox > .fbox *,
-.flexbox-container-default > .flexbox-container-default *,
-.flexbox-container-default-column > .flexbox-container-default-column * {
-    /* GIVE THE FLEXBOXES A box-sizing: border-box; SO PADDING, BORDER, ETC. CAN BE ADDED */
+.flexbox > *,
+.fbox > *,
+.flexbox-container-default > *,
+.flexbox-container-default-column > * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box
     box-sizing: border-box;
 }
 
@@ -30,6 +28,7 @@ FLEXBOX
     display: -ms-Flexbox;
     display: flexbox;
     display: -webkit-flex;
+    display -js-flex;
     display: flex;
     
     -webkit-box-flex: 0; /* 2009 Fallback */
@@ -412,6 +411,27 @@ FLEXBOX
     flex-grow: 5;
 }
 
+.grow-6 {
+    -ms-flex-positive: 6;
+    -webkit-flex-grow: 6;
+    -moz-flex-grow: 6;
+    flex-grow: 6;
+}
+
+.grow-7 {
+    -ms-flex-positive: 7;
+    -webkit-flex-grow: 7;
+    -moz-flex-grow: 7;
+    flex-grow: 7;
+}
+
+.grow-8 {
+    -ms-flex-positive: 8;
+    -webkit-flex-grow: 8;
+    -moz-flex-grow: 8;
+    flex-grow: 8;
+}
+
 /* FLEX SHRINK */
 
 .shrink-1 {
@@ -452,6 +472,30 @@ FLEXBOX
     -moz-flex-shrink: 5;
     -o-flex-shrink: 5;
     flex-shrink: 5;
+}
+
+.shrink-6 {
+    -ms-flex-negative: 6;
+    -webkit-flex-shrink: 6;
+    -moz-flex-shrink: 6;
+    -o-flex-shrink: 6;
+    flex-shrink: 6;
+}
+
+.shrink-7 {
+    -ms-flex-negative: 7;
+    -webkit-flex-shrink: 7;
+    -moz-flex-shrink: 7;
+    -o-flex-shrink: 7;
+    flex-shrink: 7;
+}
+
+.shrink-8 {
+    -ms-flex-negative: 8;
+    -webkit-flex-shrink: 8;
+    -moz-flex-shrink: 8;
+    -o-flex-shrink: 8;
+    flex-shrink: 8;
 }
 
 .auto-flex, /* For Auto-Flex, give the container of the flexboxes the .flexbox class. Otherwise it won't auto-grow. */
@@ -882,6 +926,7 @@ FLEXBOX
     display: -ms-Flexbox;
     display: flexbox;
     display: -webkit-flex;
+    display -js-flex;
     display: flex;
     
     /* GIVE THE FLEXBOXES A box-sizing: border-box; SO PADDING, BORDER, ETC. CAN BE ADDED */

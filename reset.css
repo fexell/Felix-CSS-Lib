@@ -7,13 +7,24 @@ Copyright: Felix Cervin, Mediakonsulterna
 ////////////////////////
 ----------------------------------------- */
 
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
-html, body, section, article, aside, header, footer, nav, dialog, figure, div, p, span, i, em, form, table, tr, td, object, iframe, h1, h2, h3, h4, h5, strong, audio, video, center, b, var, dl, dt, dd, ol, ul, li, blockquote, label, canvas, tbody, tfoot, thead, th, a, q, img {
+html, body, section, article, aside, header, footer, nav, dialog, figure, div, p, span, i, em, form, table, tr, td, object, iframe, h1, h2, h3, h4, h5, strong, audio, video, center, b, var, dl, dt, dd, ol, ul, li, blockquote, label, canvas, tbody, tfoot, thead, th, a, q, img, caption {
     margin: 0;
     padding: 0;
     border: 0;
     font: inherit;
     font-size: 100%;
+    vertical-align: baseline;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 a {
@@ -21,9 +32,6 @@ a {
 }
 
 input, textarea, input:focus, textarea:focus {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     outline: 0;
 }
 
