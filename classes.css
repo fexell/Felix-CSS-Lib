@@ -1089,3 +1089,119 @@ FLEXBOX
     
     background-color: #eee;
 }
+
+/* MENU FLEXBOX
+------------------------ */
+
+.flexbox-menu > * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flexbox-menu {
+    display: -webkit-box; /* 2009 Fallback */
+    display: -khtml-box; /* 2009 Fallback */
+    display: -moz-box; /* 2009 Fallback */
+    display: box; /* 2009 Fallback */
+    display: -ms-Flexbox;
+    display: flexbox;
+    display: -webkit-flex;
+    display -js-flex; /* For flexibility.js - https://github.com/jonathantneal/flexibility */
+    display: flex;
+    
+    -webkit-box-flex: 0; /* 2009 Fallback */
+    -moz-box-flex: 0; /* 2009 Fallback */
+    box-flex: 0; /* 2009 Fallback */
+    
+    -webkit-flex: 0 0 0;
+    -moz-flex: 0 0 0;
+    -ms-flex: 0 0 0;
+    flex: 0 0 0;
+    
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    list-style-type: none;
+}
+
+.flexbox-menu ul {
+    list-style-type: none;
+}
+
+.flexbox-menu ul li {
+    float: left;
+}
+
+.flexbox-menu ul li a {
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+.flexbox-menu ul li, .flexbox-menu ul li a {
+    -webkit-flex: 1 0 0;
+    -moz-flex: 1 0 0;
+    -ms-flex: 1 0 0;
+    flex: 1 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .flexbox-menu { position: sticky; top: 0; width: 100vw; }
+    .flexbox-menu ul { cursor: pointer; position: relative; overflow: hidden; max-height: 60px; background-color: #333; -webkit-transition: max-height 500ms; -moz-transition: max-height 500ms; -o-transition: max-height 500ms; transition: max-height 500ms; }
+    .flexbox-menu ul:hover, .flexbox-menu ul.touched { max-height: 100vh; }
+    .flexbox-menu ul::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 50px;
+        height: 60px;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABeSURBVHhe7dixDYVQDAPAlLRsQ0n5N4IRWIFlE6Svt4XvJEupXaRwAQBAqO5+g/OryXYrAAAAAMgzM09wTovQOlKZxAAAACBRd1/BOSxC60j1L2APzrY+AQAAZKn6AFpDXD33tl9LAAAAAElFTkSuQmCC);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .flexbox-menu ul li { float: none; }
+    .flexbox-menu ul li:nth-child(1) { margin-top: 60px; }
+    .flexbox-menu ul li a, .flexbox-menu ul li a:visited { color: #f3f3f3; padding: 22px 16px; }
+    .flexbox-menu ul li a:hover, .flexbox-menu ul li a:active { color: #333; background-color: #f3f3f3; }
+    .flexbox-menu {
+        -webkit-flex-wrap: nowrap;
+        -moz-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        
+        -webkit-box-orient: vertical; /* 2009 Fallback */
+        -khtml-box-orient: vertical; /* 2009 Fallback */
+	    -moz-box-orient: vertical; /* 2009 Fallback */
+        -ms-box-orient: vertical; /* 2009 Fallback */
+        -o-box-orient: vertical; /* 2009 Fallback */
+        box-orient: vertical; /* 2009 Fallback */
+    
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .flexbox-menu {
+        -webkit-box-orient: horizontal; /* 2009 Fallback */
+        -khtml-box-orient: horizontal; /* 2009 Fallback */
+	    -moz-box-orient: horizontal; /* 2009 Fallback */
+        -ms-box-orient: horizontal; /* 2009 Fallback */
+        -o-box-orient: horizontal; /* 2009 Fallback */
+        box-orient: horizontal; /* 2009 Fallback */
+    
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -o-flex-direction: row;
+        flex-direction: row;
+    }
+}
