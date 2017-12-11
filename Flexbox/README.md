@@ -154,12 +154,12 @@
 /* -------------------------- */
 
 .flexbox-1
-```
 
-```
+
 /* MENU */
 /* -------------------------- */
 
-/* FLEXIBLE MENU <* class="flexbox-menu"><ul><li><a></a></li></ul></*>
+/* FLEXIBLE MENU <* class="flexbox-menu"><ul><li><a></a></li></ul></*> */
 .flexbox-menu
+
 ```
