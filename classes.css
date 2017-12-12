@@ -80,20 +80,6 @@ FLEXBOX
 .fbox,
 .flexbox-default,
 .flexbox-container-default,
-.flexbox-container-default-column,
-.flexbox > *,
-.fbox > *,
-.flexbox-container-default > *,
-.flexbox-container-default-column > * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.flexbox,
-.fbox,
-.flexbox-default,
-.flexbox-container-default,
 .flexbox-container-default-column {    
     display: -webkit-box; /* 2009 Fallback */
     display: -khtml-box; /* 2009 Fallback */
@@ -924,12 +910,6 @@ FLEXBOX
     display: -js-flex; /* For flexibility.js - https://github.com/jonathantneal/flexibility */
     display: flex;
     
-    /* GIVE THE FLEXBOXES A box-sizing: border-box; SO PADDING, BORDER, ETC. CAN BE ADDED */
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box
-    box-sizing: border-box;
-    
     -webkit-box-orient: vertical; /* 2009 Fallback */
     -khtml-box-orient: vertical; /* 2009 Fallback */
 	-moz-box-orient: vertical; /* 2009 Fallback */
@@ -1003,12 +983,6 @@ FLEXBOX
     display: -webkit-flex;
     display -js-flex;
     display: flex;
-    
-    /* GIVE THE FLEXBOXES A box-sizing: border-box; SO PADDING, BORDER, ETC. CAN BE ADDED */
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box
-    box-sizing: border-box;
     
     -webkit-box-orient: horizontal; /* 2009 Fallback */
     -khtml-box-orient: horizontal; /* 2009 Fallback */
@@ -1092,12 +1066,6 @@ FLEXBOX
 
 /* MENU FLEXBOX
 ------------------------ */
-
-.flexbox-menu > * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
 
 .flexbox-menu {
     display: -webkit-box; /* 2009 Fallback */
